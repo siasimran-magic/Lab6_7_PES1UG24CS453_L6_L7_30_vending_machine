@@ -1,16 +1,28 @@
 # L6_L7_30 — Vending Machine
 
-Lab 6: Code and Branch Coverage
+Lab 6: Code and Branch Coverage Analysis
 
-## About
+## Deliverables
 
-A small Python module that handles item selection, change-making and purchases for a coin-operated vending machine.
+| Deliverable | File |
+|---|---|
+| **Code Coverage Test Cases** | [`CodeCoverageTest_vending_machine.py`](CodeCoverageTest_vending_machine.py) |
+| **Branch Coverage Test Cases** | [`BranchCoverageTest_vending_machine.py`](BranchCoverageTest_vending_machine.py) |
+| **Code Coverage Screenshot** | [`code_coverage_screenshot.png`](code_coverage_screenshot.png) |
+| **Branch Coverage Screenshot** | [`branch_coverage_screenshot.png`](branch_coverage_screenshot.png) |
+| **Code Coverage Analysis & Report** | [`Code_Coverage_Report.md`](Code_Coverage_Report.md) |
+| **Branch Coverage Analysis & Report** | [`Branch_Coverage_Report.md`](Branch_Coverage_Report.md) |
 
-## Files
+## Commands to Run Coverage
 
-| File | Description |
-|------|-------------|
-| `vending_machine.py` | The module under test |
-| `test_vending_machine.py` | Starter test file |
+### 1. Code Coverage
+```powershell
+coverage run -m pytest CodeCoverageTest_vending_machine.py
+coverage report -m
+```
 
-Refer to the lab handout for instructions.
+### 2. Branch Coverage
+```powershell
+coverage run --branch -m pytest BranchCoverageTest_vending_machine.py
+coverage report -m
+```
